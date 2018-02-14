@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Recetario - México Vegano</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-info">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center d-md-flex justify-content-around" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="mx-5 nav-item nav-link" href="argumentos.html">Argumentos</a>
+      <a class="mx-5 nav-item nav-link active" href="recetario.html">Recetario</a>
+      <a class="mx-5 nav-item nav-link navbar-brand" href="index.html"><img src="img/LOGO.png" width="25px" height="25px" alt=""></a>
+      <a class="mx-5 nav-item nav-link" href="directorio.html">Directorio</a>
+      <a class="mx-5 nav-item nav-link" href="contacto.html">Contacto</a>
+    </div>
+  </div>
+  </nav>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="dark-overlay">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-10 col-xs-10"><h1>Recetario</h1></div>
+        <div class="col-2 col-xs-2"><button class="btn" id="filterBtn" data-toggle="collapse" aria-expanded="false" href="#filter"><i class="fa fa-arrow-up"></i><i class="fa fa-arrow-down hide"></i></button></div>
+      </div>
+    </div>
+    <div id="filter" class="collapse mt-3">
+      <div class="">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class=" container pt-1">
+                <div class="row py-3 ">
+                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Desayunos</a></div>
+                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Almuerzos</a></div>
+                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Cenas</a></div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Aperitivos</a></div>
+                  <div class="col-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                      <input class="form-control" placeholder="Buscar..." type="text">
+                    </div>
+                  </div>
+                  <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Cenas</a></div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Mexicanos</a></div>
+                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Bebidas</a></div>
+                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Crudos</a></div>
+                </div>
+                <button class="btn btn-block btn-danger">Busqueda...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- recepies -->
+<section id="recepies" class="pt-5">
+    <div class="container-fluid bg-info">
+      <div class="row">
+        <div class="col-4 img-background" data-img="../img/slide1.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide2.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide3.jpg">
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-4 img-background" data-img="../img/slide4.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide5.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide6.jpg">
+
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-4 img-background" data-img="../img/slide7.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide8.jpg">
+
+        </div>
+        <div class="col-4 img-background" data-img="../img/slide9.jpg">
+
+        </div>
+
+      </div>
+
+
+    </div>
+</section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/recetario/recetario.js"></script>
+</body>
+</html>
