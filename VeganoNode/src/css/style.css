@@ -12,7 +12,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-transition: background-color .5s; }
 
 .grey-overlay {
   position: absolute;
@@ -107,6 +108,12 @@ ul.navbar-nav li {
   background-repeat: no-repeat;
   color: #fff;
   -webkit-transition: height 0.7s; }
+  #intro .align-middle {
+    top: 50%; }
 
-#recepies .img-background {
-  height: 350px; }
+#recepies {
+  padding-top: 50%;
+  display: none;
+  -webkit-transition: padding-top 0.7s; }
+  #recepies .img-background {
+    height: 350px; }
