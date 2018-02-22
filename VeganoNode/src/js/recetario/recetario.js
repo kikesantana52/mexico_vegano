@@ -1,24 +1,8 @@
 $(document).ready(function() {
   var bool_extendida = false;
 
-  //Presionar el boton de filter para mostrar filtros
-  // $('#filterBtn').on('click',()=>{
-  //   $('.fa-arrow-up').toggleClass('hide');
-  //   $('.fa-arrow-down').toggleClass('hide');
-  //   if (bool_extendida) {
-  //     $('#recepies').css({'padding-top':'8%'});
-  //     bool_extendida = false;
-  //   }else{
-  //     $('#recepies').css({'padding-top':'50%'});
-  //     bool_extendida = true;
-  //   }
-  //
-  //
-  //
-  // });
-
   //Efecto de solidificación
-  $('#intro').hover(function() {
+  $('#main').hover(function() {
     $('.dark-overlay').css('background','rgba(0,0,0,.9)')
   },function() {
     $('.dark-overlay').css('background','rgba(0,0,0,.5)')
@@ -31,7 +15,44 @@ $(document).ready(function() {
       'background-repeat':'no-repeat',
       'background-size':'cover',
       'background-position':'center'
+    });
+  });
+  // Pasar del intro al main para seleccionar los filtros
+  $('#btn-to-filter').on('click',function() {
+    $('#intro').css({'max-height':'0%' ,'height': '0'});
+    $('#main').css({'max-height':'100%','height': '100%'});
+  });
+  // ILUMINAR
+  $('.btn-outline-success').on('click', function() {
+    $(this).addClass('btn-success');
+    $(this).removeClass('btn-outline-success');
+  });
+  $('.btn-outline-info').on('click', function() {
+    $(this).addClass('btn-info');
+    $(this).removeClass('btn-outline-info');
+  });
+  $('.btn-outline-warning').on('click', function() {
+    $(this).addClass('btn-warning');
+    $(this).removeClass('btn-outline-warning');
+  });
+  //DES-ILUMINAR
+  $('.btn-success').on('click', function() {
+    $(this).addClass('btn-outline-success');
+    $(this).removeClass('btn-success');
+  });
+  $('.btn-info').on('click', function() {
+    $(this).addClass('btn-outline-info');
+    $(this).removeClass('btn-info');
+  });
+  $('.btn-warning').on('click', function() {
+    $(this).addClass('btn-outline-warning');
+    $(this).removeClass('btn-warning');
   });
 
+  //PASAR DE LOS FILTROS A LOS RESULTADOS
+  $('#btn-to-recepies').on('click',function() {
+    $('#mega').css({'max-height':'0%' ,'height': '0'});
+    $('#main').css({'max-height':'0%' ,'height': '0'});
+    $('#recepies').css({'max-height':'100%','height': '100%'});
   });
 });

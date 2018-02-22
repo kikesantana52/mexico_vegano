@@ -11,55 +11,73 @@
 </head>
 <body>
 
-  <!-- NAVBAR
-  <nav class="navbar navbar-expand-md navbar-dark bg-info">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-center d-md-flex justify-content-around" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="mx-5 nav-item nav-link" href="argumentos.html">Argumentos</a>
-      <a class="mx-5 nav-item nav-link active" href="recetario.html">Recetario</a>
-      <a class="mx-5 nav-item nav-link navbar-brand" href="index.html"><img src="img/LOGO.png" width="25px" height="25px" alt=""></a>
-      <a class="mx-5 nav-item nav-link" href="directorio.html">Directorio</a>
-      <a class="mx-5 nav-item nav-link" href="contacto.html">Contacto</a>
-    </div>
-  </div>
-  </nav>-->
+  <!-- NAVBAR-->
 
-<!-- INTRO -->
-<section id="intro" >
-  <div class="dark-overlay">
-    <div class="container align-middle">
-      <div class="row pt-4">
-        <div class="col-12"><h1>Recetario</h1></div>
+<!--MEGA CONTAINER -->
+<section id="mega">
+  <!-- PRESENTACION -->
+  <section id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="pt-50">
+            <h1 class="display-4">Recetario</h1>
+            <p>
+              Bienvenido a la sección donde se resuelven tus dudas de por donde empezar esta nueva filosofía de vida
+              donde descubres todas las bondades que tienen los productos que la naturaleza.
+            </p>
+            <a id="btn-to-filter" href="#main" class="btn btn-lg btn-outline-info">Empezemos <i class="fa fa-arrow-circle-right "></i></a>
+          </div>
+        </div>
       </div>
     </div>
-    <div id="filter">
-      <div class="">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class=" container pt-1">
-                <div class="row py-3 ">
-                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Desayunos</a></div>
-                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Almuerzos</a></div>
-                  <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Cenas</a></div>
-                </div>
-                <div class="row py-3">
-                  <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Aperitivos</a></div>
-                  <div class="col-4">
-                    <div class="input-group">
-                      <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                      <input class="form-control" placeholder="Buscar..." type="text">
-                    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section id="main">
+    <div class="dark-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="pt-45">Recetario</h1>
+            <p class="text-muted">
+              ¿Qué deseas?¿Qué tienes?¿Qué debes conseguir?<br> Puedes hacer tu busqueda por producto en la caja de texto o buscar
+              por categoria. ¡O incluso combinarlos! <i class="fa fa-cutlery"></i>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div id="filter">
+        <div class="">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="container">
+                  <div class="row py-3">
+                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Desayunos</a></div>
+                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Almuerzos</a></div>
+                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Cenas</a></div>
                   </div>
-                  <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Postres</a></div>
-                </div>
-                <div class="row py-3">
-                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Mexicanos</a></div>
-                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Bebidas</a></div>
-                  <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Crudos</a></div>
+                  <div class="row py-3">
+                    <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Aperitivos</a></div>
+                    <div class="col-4">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input class="form-control" placeholder="Buscar..." type="text">
+                      </div>
+                    </div>
+                    <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Postres</a></div>
+                  </div>
+                  <div class="row py-3">
+                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Mexicanos</a></div>
+                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Bebidas</a></div>
+                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Crudos</a></div>
+                  </div>
+                  <p class="text-muted">
+                    ¿No sabes que buscar? deja todo vacio y presiona para continuar
+                  </p>
+                  <a href="#recepies" id="btn-to-recepies" class="btn btn-primary circle"><i class="fa fa-arrow-down"></i></a>
                 </div>
               </div>
             </div>
@@ -67,29 +85,28 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </section>
-
-<!-- recepies-->
-<section id="recepies">
-    <div class="container-fluid bg-info">
-      <div class="row">
-        <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/slide1.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/slide2.jpg"></div>
+  <!-- recepies-->
+  <section id="recepies">
+      <div class="container-fluid bg-info">
+        <div class="row">
+          <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/slide1.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/slide2.jpg"></div>
+        </div>
+        <div class="row">
+          <div class="col-4 img-background" data-imgsetter="./img/slide3.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/slide8.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
+        </div>
+        <div class="row">
+          <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
+          <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-4 img-background" data-imgsetter="./img/slide3.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/slide8.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
-      </div>
-      <div class="row">
-        <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
-        <div class="col-4 img-background" data-imgsetter="./img/sanwis.jpg"></div>
-      </div>
-    </div>
-</section>
+  </section>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
