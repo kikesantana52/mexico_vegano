@@ -2,7 +2,6 @@
 body{
   height: 100%;
   width: 100%;
-  background: rgba(125,125,125,.3);
 }
 
 .hide{
@@ -25,6 +24,13 @@ body{
   width: 100%;
   height: 100%;
   -webkit-transition: background-color .5s;
+}
+
+
+.line{
+  background-color: #f0f0f0;
+  width: 700px;
+  float: center;
 }
 
 
@@ -126,6 +132,16 @@ ul.navbar-nav li{
     padding-top: 22%;
   }
 }
+#mega2{
+  background: #fff;
+  overflow: hidden;
+  max-height: 0%;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: max-height 3.7s ease;
+
+}
 #intro{
   max-height: 100%;
   height: 100%;
@@ -157,13 +173,16 @@ ul.navbar-nav li{
   }
 }
 #recepies{
-  max-height: 0%;
-  height: 0;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+  height: auto;
+    width: 100%;
   -webkit-transition: max-height 1.7s ease;
   .img-background{
     height: 350px;
+  }
+  .circle{
+    border-radius: 1.25rem;
+  }
+  .isRecepie{
+    background-color: rgba(0,0,0,0.5);
   }
 }

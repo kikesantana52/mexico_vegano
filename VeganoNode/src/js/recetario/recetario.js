@@ -19,8 +19,8 @@ $(document).ready(function() {
   });
   // Pasar del intro al main para seleccionar los filtros
   $('#btn-to-filter').on('click',function() {
-    $('#intro').css({'max-height':'0%' ,'height': '0'});
-    $('#main').css({'max-height':'100%','height': '100%'});
+    $('#intro').css({'max-height':'0%' });
+    $('#main').css({'height':'100%','max-height':'100%'});
   });
   // ILUMINAR
   $('.btn-outline-success').on('click', function() {
@@ -51,8 +51,7 @@ $(document).ready(function() {
 
   //PASAR DE LOS FILTROS A LOS RESULTADOS
   $('#btn-to-recepies').on('click',function() {
-    $('#mega').css({'max-height':'0%' ,'height': '0'});
-    $('#main').css({'max-height':'0%' ,'height': '0'});
-    $('#recepies').css({'max-height':'100%','height': '100%'});
+    $('#mega').css({'max-height':'0%'});
+    $('#mega2').css({'height': 'auto','max-height':'800%'});
   });
 });
