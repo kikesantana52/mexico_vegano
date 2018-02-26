@@ -1,5 +1,8 @@
+$main-color: #89A327;
+$secondary-color: #E01F85;
 /* MAIN CSS */
 body{
+  padding-top: 80px;
   height: 100%;
   width: 100%;
 }
@@ -27,12 +30,95 @@ body{
 }
 
 
+
 .line{
   background-color: #f0f0f0;
   width: 700px;
   float: center;
 }
 
+/* HEADER */
+#navbar{
+  background: $main-color;
+  border-bottom: $secondary-color solid 2px;
+  .active{
+    background: rgba(154, 185, 40, 0.5);
+  }
+  .brand{
+    height: 80px;
+    overflow: hidden;
+  }
+  img{
+    height: 65px;
+    width: auto;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  li {
+    height: 80px;
+    float: left;
+    padding: 16px;
+    a{
+      color: white;
+    }
+
+  }
+  li:hover{
+    background: rgba(154, 185, 40, 0.5);
+  }
+  .menu-bar{
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  #navbar{
+    .brand{
+      margin-top: 10px;
+    }
+    .menu-bar{
+      display: block;
+      float: right;
+      .bt-menu{
+        color: white;
+      }
+      i{
+        font-size: 40px;
+      }
+    }
+    li {
+      float: none;
+      border-bottom: $secondary-color solid 2px;
+    }
+  }
+  .navigate{
+    width: 50%;
+    height: 100%;
+    left:-100%;
+    margin:0;
+    margin-top: 92px;
+    position: fixed;
+    background: $main-color;
+  }
+}
+
+/* FOOTER */
+#footer{
+  border-top:  $secondary-color solid 2px;
+  .icon-link{
+    font-size: 2em;
+    margin: 5px;
+    color: #fff;
+  }
+  img{
+    height: 50px;
+    width: 140px;
+  }
+}
 
 
 
@@ -184,5 +270,43 @@ ul.navbar-nav li{
   }
   .isRecepie{
     background-color: rgba(0,0,0,0.5);
+  }
+}
+
+/*ARGUMENTOS */
+#argumentos_1{
+  height: 200px;
+  width: 100%;
+  background:url('../img/slide6.jpg');
+  text-align: center;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  color:#fff;
+  .dk-overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+}
+.accord{
+  width: 100%;
+}
+
+/* CONTACT */
+#contact{
+  height: 200px;
+  width: 100%;
+  background:url('../img/slide2.jpg');
+  text-align: center;
+  background-size: cover;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  color:#fff;
+  .dk-overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
   }
 }

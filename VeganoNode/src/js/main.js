@@ -9,22 +9,39 @@
 
 $(document).ready(function() {
 
-var flag = false;
-var scroll;
+var bool_flag = false;
+var obj_scroll;
 
     $(window).scroll(function() {
-       scroll = $(window).scrollTop();
-       if (scroll>1000) {
-         if(!flag){
+       obj_scroll = $(window).scrollTop();
+       if (obj_scroll>1000) {
+         if(!bool_flag){
            $(".logo").css({"margin-top" : "0","width":"50px","height" : "50px"});
-           flag = true;
+           bool_flag = true;
          }
        }else{
-         if (flag) {
+         if (bool_flag) {
            $(".logo").css({"margin-top" : "50%","width":"250px","height" : "250px"});
-           flag = false;
+           bool_flag = false;
          }
 
        }
+    });
+
+
+    /*** NAVBAR ANIMATION FUNCTIONS */
+    var bool_barOpen = false;
+    $('.menu-bar').on('click',function(){
+      if (!bool_barOpen) {
+        $('.navigate').animate({
+          left: '0'
+        });
+        bool_barOpen = true;
+      }else{
+        $('.navigate').animate({
+          left: '-100%'
+        });
+        bool_barOpen = false;
+      }
     });
 });
