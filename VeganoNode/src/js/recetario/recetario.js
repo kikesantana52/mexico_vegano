@@ -23,30 +23,22 @@ $(document).ready(function() {
     $('#main').css({'height':'100%','max-height':'100%'});
   });
   // ILUMINAR
-  $('.btn-outline-success').on('click', function() {
-    $(this).addClass('btn-success');
-    $(this).removeClass('btn-outline-success');
+  $('.btn-outline-vegan').on('click', function() {
+    $(this).addClass('btn-vegan');
+    $(this).removeClass('btn-outline-vegan');
   });
-  $('.btn-outline-info').on('click', function() {
-    $(this).addClass('btn-info');
-    $(this).removeClass('btn-outline-info');
-  });
-  $('.btn-outline-warning').on('click', function() {
-    $(this).addClass('btn-warning');
-    $(this).removeClass('btn-outline-warning');
+  $('.btn-outline-lila').on('click', function() {
+    $(this).addClass('btn-lila');
+    $(this).removeClass('btn-outline-lila');
   });
   //DES-ILUMINAR
-  $('.btn-success').on('click', function() {
-    $(this).addClass('btn-outline-success');
-    $(this).removeClass('btn-success');
+  $('.btn-vegan').on('click', function() {
+    $(this).addClass('btn-outline-vegan');
+    $(this).removeClass('btn-vegan');
   });
-  $('.btn-info').on('click', function() {
-    $(this).addClass('btn-outline-info');
-    $(this).removeClass('btn-info');
-  });
-  $('.btn-warning').on('click', function() {
-    $(this).addClass('btn-outline-warning');
-    $(this).removeClass('btn-warning');
+  $('.btn-lila').on('click', function() {
+    $(this).addClass('btn-outline-lila');
+    $(this).removeClass('btn-lila');
   });
 
   //PASAR DE LOS FILTROS A LOS RESULTADOS

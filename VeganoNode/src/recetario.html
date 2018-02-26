@@ -11,7 +11,26 @@
 </head>
 <body>
 
-  <!-- NAVBAR-->
+  <!-- NAVBAR HEADER -->
+  <section id="navbar" class=" fixed-top">
+    <div class="menu-bar">
+      <a href="#" class="bt-menu btn p-4"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-sm-2 brand"><a href="#" class="btn bg-white"><img src="./img/LOGO.png" alt=""></a></div>
+        <div class="col-8 navigate">
+          <ul>
+            <li ><a href="argumentos.html" class="nav-link">Argumentos</a></li>
+            <li><a href="directorio.html" class="nav-link">Directorio</a></li>
+            <li class="active"><a href="recetario.html" class="nav-link">Recetario</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 <!--MEGA CONTAINER -->
 <section id="mega">
@@ -26,7 +45,7 @@
               Bienvenido a la sección donde se resuelven tus dudas de por donde empezar esta nueva filosofía de vida
               donde descubres todas las bondades que tienen los productos que la naturaleza.
             </p>
-            <a id="btn-to-filter" href="#main" class="btn btn-lg btn-outline-info">Empezemos <i class="fa fa-arrow-circle-right "></i></a>
+            <a id="btn-to-filter" href="#main" class="btn btn-lg btn-outline-vegan">Empezemos <i class="fa fa-arrow-circle-right "></i></a>
           </div>
         </div>
       </div>
@@ -55,29 +74,29 @@
               <div class="col">
                 <div class="container">
                   <div class="row py-3">
-                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Desayunos</a></div>
-                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Almuerzos</a></div>
-                    <div class="col-4"><a href="#" class="btn btn-outline-success btn-block">Cenas</a></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Desayunos</button></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Almuerzos</button></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Cenas</button></div>
                   </div>
                   <div class="row py-3">
-                    <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Aperitivos</a></div>
+                    <div class="col-4"><button class="btn btn-outline-lila btn-block">Aperitivos</button></div>
                     <div class="col-4">
                       <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-search"></i></span>
                         <input class="form-control" placeholder="Buscar..." type="text">
                       </div>
                     </div>
-                    <div class="col-4"><a href="#" class="btn btn-outline-info btn-block">Postres</a></div>
+                    <div class="col-4"><button class="btn btn-outline-lila btn-block">Postres</button></div>
                   </div>
                   <div class="row py-3">
-                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Mexicanos</a></div>
-                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Bebidas</a></div>
-                    <div class="col-4"><a href="#" class="btn btn-outline-warning btn-block">Crudos</a></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Mexicanos</button></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Bebidas</button></div>
+                    <div class="col-4"><button class="btn btn-outline-vegan btn-block">Crudos</button></div>
                   </div>
                   <p class="text-muted">
                     ¿No sabes que buscar? deja todo vacio y presiona para continuar
                   </p>
-                  <a href="#recepies" id="btn-to-recepies" class="btn btn-primary circle"><i class="fa fa-arrow-down"></i></a>
+                  <a href="#recepies" id="btn-to-recepies" class="btn btn-lila circle"><i class="fa fa-arrow-down"></i></a>
                 </div>
               </div>
             </div>
@@ -92,9 +111,9 @@
   <!-- recepies-->
   <section id="recepies">
       <div class="container-fluid">
-        <div class="row bg-dark py-4">
+        <div class="row bg-vegan py-4">
           <div class="col text-center">
-            <a href="#recepies" id="NewFilter" class="btn btn-primary circle"><i class="fa fa-arrow-up"></i></a>
+            <a href="#recepies" id="NewFilter" class="btn btn-lila circle"><i class="fa fa-arrow-up"></i></a>
           </div>
         </div>
 
@@ -120,7 +139,7 @@
           <div class="col-4 img-background isRecepie" data-imgsetter="https://source.unsplash.com/1607x900/?avocado"></div>
           <div class="col-4 img-background isRecepie" data-imgsetter="https://source.unsplash.com/800x800/?avocado"></div>
         </div>
-        <div class="row bg-dark py-4">
+        <div class="row bg-vegan py-4">
           <div class="col text-center">
             <a href="#recepies" class="btn btn-primary circle">Ver más <i class="fa fa-arrow-down"></i></a>
           </div>
@@ -148,7 +167,7 @@
           <div class="col-4 img-background" data-imgsetter="https://source.unsplash.com/807x800/?avocado"></div>
           <div class="col-4 img-background" data-imgsetter="https://source.unsplash.com/808x800/?avocado"></div>
         </div>
-        <div class="row bg-dark py-4">
+        <div class="row bg-vegan py-4">
           <div class="col text-center">
             <a href="#recepies" class="btn btn-primary circle">Ver más <i class="fa fa-arrow-down"></i></a>
           </div>
@@ -176,7 +195,7 @@
           <div class="col-4 img-background" data-imgsetter="https://source.unsplash.com/800x802/?avocado"></div>
           <div class="col-4 img-background" data-imgsetter="https://source.unsplash.com/800x803/?avocado"></div>
         </div>
-        <div class="row bg-dark py-4">
+        <div class="row bg-vegan py-4">
           <div class="col text-center">
             <a href="#recepies"  class="btn btn-primary circle">Ver más <i class="fa fa-arrow-down"></i></a>
           </div>
@@ -185,6 +204,35 @@
 
       </div>
   </section>
+  <!-- FOOTER -->
+  <section id="footer" class="mt-2">
+    <div class="container-fluid">
+      <div class="row bg-vegan text-white py-2">
+        <div class="col-3 text-center py-5">
+          <a href="#" class="icon-link"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="icon-link"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="icon-link"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col-2 pt-3">
+          <img src="./img/google.png" alt="" class="img-fluid"><br>
+          <img src="./img/apple.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 pt-3">
+          <h5>Sugerencias y observaciones</h3>
+              <div class="input-group pr-5">
+                <input type="text" class="form-control" placeholder="Comentarios y sugerencias..." aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-lila" type="button">Enviar</button>
+                </div>
+              </div>
+
+        Terminos de uso &copy; 2018 México Vegano. Todos los derechos reservados.
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 </section>
 
 
@@ -192,5 +240,6 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/recetario/recetario.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
