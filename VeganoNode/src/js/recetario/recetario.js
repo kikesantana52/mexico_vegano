@@ -54,4 +54,11 @@ $(document).ready(function() {
     $('#mega').css({'max-height':'0%'});
     $('#mega2').css({'height': 'auto','max-height':'800%'});
   });
+
+  $('#NewFilter').on('click',function() {
+    $('#mega2').css({'max-height':'0%','height' : '0'});
+    $('#mega').css({'max-height' : "100%"});
+  });
+
+
 });
