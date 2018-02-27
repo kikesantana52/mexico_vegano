@@ -147,6 +147,7 @@ body{
   bottom: 20%;
   left: 48%;
   display: none;
+  -webkit-transition: width 1s,height 1s;
 }
 
 #helper{
@@ -158,7 +159,7 @@ body{
 
 .left-bar{
   width: 20px;
-  height: 100%;
+  height: 800%;
 }
 
 .navbar{
@@ -268,9 +269,19 @@ ul.navbar-nav li{
   .circle{
     border-radius: 1.25rem;
   }
-  
+
   .isRecepie{
+    position:absolute;
     background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-transition: max-height .5s;
   }
 }
 

@@ -52,5 +52,10 @@ $(document).ready(function() {
     $('#mega').css({'max-height' : "100%"});
   });
 
+$('.img-background').hover(function(){
+  $(this).children('.isRecepie').css({'max-height' : "100%"});
+},function() {
+  $(this).children('.isRecepie').css({'max-height' : "0"});
+});
 
 });
