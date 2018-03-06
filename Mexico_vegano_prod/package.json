@@ -1,0 +1,22 @@
+{
+  "name": "mexico_vegano",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Enrique Santana Del Pozo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-sanitizer": "^1.0.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.7",
+    "popper.js": "^1.12.9"
+  }
+}

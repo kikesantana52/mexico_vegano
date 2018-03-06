@@ -44,7 +44,7 @@ $(document).ready(function() {
   //PASAR DE LOS FILTROS A LOS RESULTADOS
   $('#btn-to-recepies').on('click',function() {
     $('#mega').css({'max-height':'0%'});
-    $('#mega2').css({'height': 'auto','max-height':'800%'});
+    $('#mega2').css({'height': 'auto','max-height':'1600%'});
   });
 
   $('#NewFilter').on('click',function() {
