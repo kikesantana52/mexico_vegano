@@ -116,6 +116,17 @@ body {
   position: absolute;
   bottom: 20%;
   left: 48%;
+  width: 100px;
+  height: 100px;
+  display: none;
+  -webkit-transition: width 1s,height 1s; }
+
+#semilla_bg {
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+  width: 150px;
+  height: 150px;
   display: none;
   -webkit-transition: width 1s,height 1s; }
 
