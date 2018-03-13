@@ -92,6 +92,69 @@ body {
     height: 50px;
     width: 140px; }
 
+/*************************VENTANA GRANDE *******************/
+@media screen and (min-width: 992px) {
+  #background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c4e5f2; }
+  #sol {
+    background: #edd009;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    margin-left: 150px;
+    margin-top: 50px; }
+  #tierra {
+    background: url("../img/nopal/TIERRA.png");
+    background-size: 30% 100%;
+    position: fixed;
+    bottom: 0;
+    height: 40%;
+    width: 100%; }
+  #logo {
+    background: url("../img/LOGO.png");
+    background-size: 15%;
+    position: fixed;
+    left: 45%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat; } }
+
+/*************************VENTANA CHICA *******************/
+@media screen and (max-width: 992px) {
+  #background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #c4e5f2; }
+  #sol {
+    background: #edd009;
+    height: 75px;
+    width: 75px;
+    border-radius: 150px;
+    margin-left: 75px;
+    margin-top: 75px; }
+  #tierra {
+    background: url("../img/nopal/TIERRA.png");
+    background-size: 50% 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 35%;
+    width: 100%; }
+  #logo {
+    background: url("../img/nopal/TIERRA.png");
+    background-size: 30% 100%;
+    position: fixed;
+    height: 40%;
+    width: 100%; } }
+
 /* INDEX */
 #enviroment {
   height: 100%;

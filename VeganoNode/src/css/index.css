@@ -1,0 +1,102 @@
+
+/*************************** INDEX ***********************************/
+
+/* SMALL DEVICES */
+@media screen and (max-width: 992px) {
+  #enviroment {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #cielo {
+    background: url("../img/nopal/TIERRA.png"), url("../img/nopal/CIELO.png"), #c4e5f2;
+    background-position: left bottom, 10% top;
+    background-repeat: repeat-x, no-repeat;
+    background-size: 60%,40%,auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+/* LARGE DEVICES */
+@media screen and (min-width: 992px) {
+  #enviroment {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #cielo {
+    background: url("../img/nopal/TIERRA.png"), url("../img/nopal/CIELO.png"), #c4e5f2;
+    background-position: left bottom, 10% top;
+    background-repeat: repeat-x, no-repeat;
+    background-size: 30%,40%,auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#semilla {
+  position: absolute;
+  bottom: 20%;
+  left: 48%;
+  width: 100px;
+  height: 100px;
+  display: none;
+  -webkit-transition: width 1s,height 1s; }
+
+#semilla_bg {
+  position: absolute;
+  bottom: 20%;
+  left: 46%;
+  width: 150px;
+  height: 150px;
+  display: none;
+  -webkit-transition: width 1s,height 1s; }
+
+#helper {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.left-bar {  width: 20px;  height: 800%; }
+
+.navbar {  background: rgba(50, 90, 63, 0); }
+
+a.nav-link {  color: rgba(255, 255, 255, 0.5);  color: rgba(0, 0, 0, 0.5); }
+
+a:hover {color: white; }
+
+a.active {  color: white; }
+
+ul.navbar-nav li { margin-right: 50px;  margin-left: 50px; }
+
+.logo {
+  height: 250px;
+  width: auto;
+  margin-top: 50%;
+  -webkit-transition: width 1s, height 1s, margin-right 1s,margin-top 1s;
+}
+
+#header {
+  position: relative;
+  min-height: 100%;
+  background: url("../img/slide2.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}

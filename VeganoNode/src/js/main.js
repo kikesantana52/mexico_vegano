@@ -24,40 +24,6 @@ var obj_scroll;
            $('#semilla_bg').addClass('bounceIn');
            $('#semilla_bg').removeClass('bounceOut');
 
-       }else
-       if (obj_scroll>800 && obj_scroll<1200){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_2.png");
-           $('#semilla').addClass('rubberBand');
-           $('#semilla').removeClass('bounceIn');
-       }else
-       if (obj_scroll>1200 && obj_scroll<1500){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_3.png");
-           $('#semilla').removeClass('rubberBand');
-           $('#semilla').addClass('rubberBand');
-       }else
-       if (obj_scroll>1500 && obj_scroll<1900){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_4.png");
-           $('#semilla').animateCss('rubberBand');
-       }else
-       if (obj_scroll>1900 && obj_scroll<2300){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_5.png");
-          $('#semilla').animateCss('rubberBand');
-       }else
-       if (obj_scroll>2300 && obj_scroll<2800){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_6.png");
-           $('#semilla').animateCss('rubberBand');
-       }else
-       if (obj_scroll>2800 && obj_scroll<3300){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_7.png");
-           $('#semilla').animateCss('bounce');
-       }else
-       if (obj_scroll>3300 && obj_scroll<3800){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_8.png");
-           $('#semilla').animateCss('bounce');
-       }else
-       if (obj_scroll>3800 && obj_scroll<4200){
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_9.png");
-           $('#semilla').animateCss('bounce');
        }
     });
 
