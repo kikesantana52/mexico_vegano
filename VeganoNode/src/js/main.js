@@ -25,24 +25,34 @@ var obj_scroll;
             $("#logo").css({"top" : "15%","background-size":"10%"});
             $('#goRight').css({"padding-right":".5em"});
             $('#goLeft').css({"padding-left":".5em"});
-           $("#semilla").fadeOut();
-          $("#semilla").addClass('bounceOut');
-          $("#semilla").removeClass('bounceIn');
-          $("#semilla_bg").fadeOut();
+            $('#fondo').removeClass('rubberBand').delay(1).queue(function(next){
+              $(this).addClass('rubberBand').delay(500).queue(function(next){
+                $(this).removeClass("rubberBand");
+                $(this).hide();
+                next();
+              });
+              next();
+            });
+            $('#semilla').removeClass('rubberBand').delay(1).queue(function(next){
+              $(this).addClass('rubberBand').delay(500).queue(function(next){
+                $(this).removeClass("rubberBand");
+                $(this).hide();
+                next();
+              });
+              next();
+            });
+
 
        }else
        if (obj_scroll>200 && obj_scroll<800) {
          $("#logo").css({"top" : "2%","background-size":"5%"});
          $('#goRight').css({"padding-right":"2em"});
          $('#goLeft').css({"padding-left":"2em"});
+         $('#fondo').show();
+         $('#semilla').show();
+         $('#fondo').addClass('rubberBand');
+         $('#semilla').addClass('rubberBand');
 
-           $("#semilla>img").attr("src","img/nopal/SEMILLA_1.png");
-           $("#semilla").show();
-           $('#semilla').addClass('bounceIn');
-           $('#semilla').removeClass('bounceOut');
-           $("#semilla_bg").show();
-           $('#semilla_bg').addClass('bounceIn');
-           $('#semilla_bg').removeClass('bounceOut');
 
        }
     });
