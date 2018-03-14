@@ -11,43 +11,46 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <style>
+  body{
+    padding-top: 0;
+    height: 100%;
+  }
+    .jumbotron{
+      width: 50%;
+    }
+    .bg-vegan{
+      height: 100%;
+    }
+    .centrar{
+      height: 200px;
+    }
+  </style>
 
-    <div id="background">
-      <div id="sol"></div>
-      <div id="tierra"></div>
-      <div id="logo" class="animated bounceInDown"></div>
-    </div>
+    <div class="container-fluid bg-vegan py-5">
+      <div class="row">
+        <div class="col">
+          <form action=""  id="irIndex">
+            <div class="jumbotron m-5 mx-auto">
+              <div class="container">
+                <div class="row">
+                  <img src="img/LOGO_II.png" alt="" class="img-fluid centrar mx-auto">
+                </div>
+              </div>
+              <div class="form-group">
+                <h2>Nombre</h2>
+                <input id="name" type="text" name="name" placeholder="Nombre...." class="form-control">
+              </div>
+              <div class="form-group">
+                <h2>Contraseña</h2>
+                <input id="psw" type="password" name="psw" placeholder="Contraseña...." class="form-control">
+              </div>
+              <input type="submit" class="btn btn-outline-lila btn-block">
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="argumentos.html">Argumentos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="directorio.html">Directorio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="recetario.html">Recetario</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-
-
-    <div id="helper">
-      <div id="bar-1" class="bg-primary left-bar"></div>
-      <div id="bar-2" class="bg-success left-bar"></div>
-      <div id="bar-3" class="bg-info left-bar"></div>
-      <div id="bar-4" class="bg-warning left-bar"></div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
   <script src="js/jquery.min.js"></script>

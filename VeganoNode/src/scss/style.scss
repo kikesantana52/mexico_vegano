@@ -122,6 +122,7 @@ body{
 
 /*************************VENTANA GRANDE *******************/
 @media screen and (min-width: 992px) {
+  header { width:999px; }
   #background{
     height: 100%;
     width: 100%;
@@ -131,7 +132,7 @@ body{
     background: #c4e5f2;
   }
   #sol{
-    background: #edd009;
+    background: #edb709;
     height: 150px;
     width: 150px;
     border-radius: 150px;
@@ -148,17 +149,28 @@ body{
     width: 100%;
   }
   #logo{
-    background: url('../img/LOGO.png');
-    background-size: 15%;
+    background: url('../img/LOGO_II.png');
+    background-size: 10%;
     position: fixed;
-    left: 45%;
+    top: 15%;
+    left: 48%;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s;
+  }
+  #goRight{
+    padding-right: .5em;
+    -webkit-transition: padding-right 1s;
+  }
+  #goLeft{
+    padding-left: .5em;
+    -webkit-transition: padding-left 1s;
   }
 }
 /*************************VENTANA CHICA *******************/
 @media screen and (max-width: 992px) {
+  header { width:992px; }
   #background{
     height: 100%;
     width: 100%;
@@ -168,7 +180,7 @@ body{
     background: #c4e5f2;
   }
   #sol{
-    background: #edd009;
+    background: #edb709;
     height: 75px;
     width: 75px;
     border-radius: 150px;
@@ -183,13 +195,19 @@ body{
     left: 0;
     height: 35%;
     width: 100%;
-  }#logo{
-    background: url('../img/nopal/TIERRA.png');
-    background-size: 30% 100%;
-    position: fixed;
-    height: 40%;
-    width: 100%;
   }
+  #logo{
+    background: url('../img/LOGO_II.png');
+    background-size: 15%;
+    position: fixed;
+    top: 15%;
+    left: 45%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s, background-size 1s;
+  }
+
 }
 
 
