@@ -31,33 +31,19 @@ body {
   float: center; }
 
 /* HEADER */
-#navbar {
-  background: #89A327;
-  border-bottom: #E01F85 solid 2px; }
-  #navbar .active {
-    background: rgba(154, 185, 40, 0.5); }
-  #navbar .brand {
-    height: 80px;
-    overflow: hidden; }
-  #navbar img {
-    height: 65px;
-    width: auto; }
-  #navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; }
-  #navbar li {
-    height: 80px;
-    float: left;
-    padding: 16px; }
-    #navbar li a {
-      color: white; }
-  #navbar li:hover {
-    background: rgba(154, 185, 40, 0.5); }
-  #navbar .menu-bar {
-    display: none; }
+nav {
+  border-bottom: #E01F85 5px solid; }
+  nav img {
+    width: auto;
+    height: 70px; }
+
+.white-box {
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  padding: .5em;
+  width: auto;
+  height: 80px;
+  margin-top: 0; }
 
 @media screen and (max-width: 992px) {
   #navbar .brand {
@@ -350,8 +336,8 @@ ul.navbar-nav li {
     -webkit-transition: max-height .5s; }
 
 /*ARGUMENTOS */
-#argumentos_1 {
-  height: 200px;
+#argumentos_init {
+  height: 400px;
   width: 100%;
   background: url("../img/slide6.jpg");
   text-align: center;
@@ -359,13 +345,20 @@ ul.navbar-nav li {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff; }
-  #argumentos_1 .dk-overlay {
+  #argumentos_init .dk-overlay {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; }
 
-.accord {
-  width: 100%; }
+.v-align {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
 
 /* Directorio */
 #dir .carta {
