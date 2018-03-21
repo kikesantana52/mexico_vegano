@@ -352,8 +352,8 @@ ul.navbar-nav li {
   height: 400px;
   width: 100%; }
 
-#caja_filtro {
-  width: 600px; }
+#main_dir .card {
+  width: 100%; }
 
 #dir .carta {
   border: 2px solid #777;
