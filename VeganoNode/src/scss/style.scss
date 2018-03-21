@@ -401,9 +401,10 @@ ul.navbar-nav li{
   flex-direction: column;
 }
 .text-compressed{
-  height: 80px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  height: 100px;
+  background: -webkit-linear-gradient(#333,#eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* Directorio */
 .filter_width_100{
@@ -411,6 +412,17 @@ ul.navbar-nav li{
 }
 .forma-extendida{
   width: 600px;
+}
+#map {
+        height: 400px;
+        width: 100%;
+       }
+#caja_filtro{
+  width: 600px;
+}
+#main_dir{
+
+
 }
 #dir{
   .carta{
