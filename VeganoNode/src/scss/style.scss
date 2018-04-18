@@ -1,4 +1,4 @@
-$main-color: #89A327;
+  $main-color: #89A327;
 $secondary-color: #E01F85;
 /* MAIN CSS */
 body{
@@ -10,7 +10,10 @@ body{
 .hide{
   display: none;
 }
-
+.bordered{
+  border: $secondary-color 5px solid;
+  border-radius: 20px;
+}
 .dk-overlay{
   background-color: rgba(0,0,0,0.5);
   width: 100%;

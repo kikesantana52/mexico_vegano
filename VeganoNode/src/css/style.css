@@ -7,6 +7,10 @@ body {
 .hide {
   display: none; }
 
+.bordered {
+  border: #E01F85 5px solid;
+  border-radius: 20px; }
+
 .dk-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
